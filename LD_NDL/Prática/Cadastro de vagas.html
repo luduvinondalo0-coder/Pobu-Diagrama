@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Vagas</title>
+  <link rel="stylesheet" href="Cadastro d vagas.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Vagas</h1>
+    <form id="form-vaga">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" required></textarea>
+
+      <label for="requisitos">Requisitos:</label>
+      <textarea id="requisitos" name="requisitos" required></textarea>
+
+      <input class="curriculum" type="file" id="curriculum" name="curriculum" accept=".pdf, .docx, .doc, JPG, .img">
+
+    <script class="curriculum">
+        const express = require(express);
+         const multer = require("multer");
+          const upload = multer({dest: "upload/"});
+
+          app.post("/candidatos", upload.single("curriculum"), (req, res) => {
+             
+            const curriculum = req.file;
+            // processar o arquivo
+            console.log(curriculum);
+            res.send("Curriculum enciado com sucesso!");
+          })
+          
+    </script>
+
+      <button type="submit">Criar Vaga</button>
+    </form>
+  </div>
+</body>
+</html>
