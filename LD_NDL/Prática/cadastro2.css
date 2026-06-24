@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+
+body{
+    background: url('Fundo.jpg')
+    no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #003580;
+}
+*/
+.cadastro-box{
+    background: rgba(255,255,255,0.95);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px
+    40px rgba(239, 6, 6, 0.2);
+    text-align: center;
+}
+/* logo da empresa*/
+.cadastro-box .logo img{
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.cadastro-box h2{
+    margin-bottom: 25px;
+    color: #003580;
+}
+
+.cadastro-box
+input[type="text"],
+.cadastro-box
+input[type="email"],
+.cadastro-box
+input[type="tel"],
+.cadastro-box
+input[type="password"]{
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid
+    #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.cadastro-box button:hover
+{
+    padding-bottom: ;
+    background: #00c6ff;
+}
+
+.cadastro-box .login-link
+{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.cadastro-box .login-link
+a{
+    color: #003580;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 20px;
+     width: 100%;
+    padding: 18px;
+    margin-bottom: 20px;
+    border: 1px solid
+    greenyellow;
+    border-radius: 8px;
+    font-size: 14px;
+}
+/* curriculum*/
+.curriculum{
+    color: red;
+  width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid
+    #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+}
+
+.cadastro-box .login-link
+a:hover{
+    color: #00c6ff;
+}
+
+@media (max-width: 500px){
+    .cadastro-box{
+        padding: 30px
+        20px;
+    }
+}
